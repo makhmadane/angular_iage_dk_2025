@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular_iage_dk_2025';
+  title = 'IAGE 3 DAKAR';
+
+
+  hello(){
+    console.log("Salut");
+  }
 }

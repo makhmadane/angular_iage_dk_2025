@@ -1,0 +1,21 @@
+<div class="container">
+    <table class="table table-striped">
+
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+        <tr *ngFor="let o of offres">
+            <td>{{o.id}}</td>
+            <td>{{o.title}}</td>
+            <td>{{o.description}}</td>
+            <td>
+                <button (click)="deleteOffre(o.id)" class="btn btn-danger">Delete</button>
+                <button class="btn btn-primary">Update</button>
+            </td>
+        </tr>
+
+    </table>
+</div>
