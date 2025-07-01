@@ -7,18 +7,22 @@ import { OffreComponent } from './offre/offre.component';
 import { UserComponent } from './user/user.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RoleComponent } from './role/role.component';
+import { AddOffreComponent } from './add-offre/add-offre.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     OffreComponent,
     UserComponent,
-    RoleComponent
+    RoleComponent,
+    AddOffreComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
